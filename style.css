@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Lato:wght@300;700&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Lato:wght@300;700&family=Roboto:ital,wght@1,500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Foldit&family=Lato:wght@300;700&family=Oxygen:wght@700&family=Roboto:ital,wght@1,500&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+
+/* ---------------------------------------------Navbar-------------------------------------- */
+nav {
+    width: 100%;
+    height: 100px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.heading-logo {
+    font-size: 2.4rem;
+    color: white;
+    font-family: 'Bruno Ace', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.heading-logo span {
+    color: red;
+   
+    transition: all 1s ease-in-out;
+}
+
+.heading-logo span:hover {
+    color: rgba(255, 0, 0, 0.68);
+   
+}
+
+.heading-nav-menu li {
+    float: left;
+    list-style: none;
+}
+
+.heading-nav-menu li a {
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+    padding: 20px;
+    color: red;
+    font-family: 'Bruno Ace', cursive;
+    font-weight: 700;
+
+}
+
+.heading-nav-menu li a:hover {
+    background: red;
+    color: black;
+    border-radius: 9px;
+    height: 8vh;
+}
+
+/* ---------------------------------------------Section --------------------------------------- */
+.backgound-img {
+    background: url(img/pexels-torsten-dettlaff-70912.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 100vh;
+}
+
+.heading-text {
+
+    position: absolute;
+    top: 40vh;
+    left: 12%;
+}
+
+.heading-text h1 {
+    font-size: 3rem;
+    color: red;
+    font-family: 'Bruno Ace', cursive;
+    font-weight: bold;
+    transition: all 0.4 ease-in;
+}
+
+.heading-text h1:hover{
+    transform: rotateY(-10deg);
+}
+
+.heading-font {
+    font-size: 2rem;
+    color: aliceblue;
+    width: 80%;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.reg-but button {
+    color: white;
+    background: red;
+    border: 2px solid red;
+    border-radius: 1px;
+    padding: 18px 30px 18px 30px;
+    font-size: 1.2rem;
+    font-family: 'Bruno Ace', cursive;
+    margin-top: 40px;
+    transform: rotateX('-1deg');
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.reg-but button:hover {
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%, 0 30%);
+    color: black;
+    font-weight:bold ;
+}
+
+
+
+
+/* -------------------------------SERVICE-------------------------------------------- */
+
+
+
+
+.font-class {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+    color: red;
+    font-family: 'Bruno Ace', cursiv;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.font-class::after {
+    content: '';
+    background: white;
+    width: 150px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.font-class:hover{
+    transform:rotateY(30deg);
+    
+}
+
+
+
+.our-service {
+    background: black;
+}
+
+
+.rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-pt {
+    background-color: grey;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 12px;
+    color: white;
+    
+    transition: all 0.5s ease-in-out;
+}
+
+.service-pt:hover {
+    background-color: red;
+    transform: scaleX(1.2);
+    color: white;
+}
+
+
+.service-pt a {
+    background-color: red;
+    color: black;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.service-pt a:hover {
+    color: white;
+    background-color: black;
+}
+
+.service-pt h2 {
+    font-size: 1.3rem;
+    font-family: 'Bruno Ace', cursiv;
+    text-align: center;
+}
+
+.font2 {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.rows-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: grey;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 12px;
+    color: white;
+  
+    transition: all 0.5s ease-in-out;
+}
+
+.service:hover {
+    background-color: red;
+    transform: translateY(0.2in);
+    color: white;
+}
+
+.service {}
+
+.service a {
+    background-color: red;
+    color: black;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.service a:hover {
+    color: white;
+    background-color: black;
+}
+
+.service h2 {
+    font-size: 1.3rem;
+    font-family: 'Bruno Ace', cursiv;
+    text-align: center;
+}
+
+
+/* -------------------------------------Contact Section ------------------------------------ */
+
+
+
+#contact {
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-blend-mode: darken;
+    background: url(img/conatct\ img.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+
+    font-size: 1.1rem;
+
+}
+
+#contact-box form {
+    width: 50%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Bruno Ace', cursiv;
+}
+
+.submit {
+    padding: 18px 20px 18px 20px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    border: 2px solid black;
+    transform: scaleY(1);
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: black;
+    color: white;
+}
+
+/* -----------------------------Footer---------------------------------------- */
+
+
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 9px 20px;
+    height: 10vh;
+
+}
+
+.center {
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+}
